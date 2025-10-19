@@ -35,3 +35,4 @@ include(Catch)
 catch_discover_tests(simple_test
     DISCOVERY_MODE PRE_TEST
 )
+add_test(NAME simple_test COMMAND $<TARGET_FILE:simple_test>)
