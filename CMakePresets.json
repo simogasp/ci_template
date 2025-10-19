@@ -25,8 +25,7 @@
           "binaryDir": "${sourceDir}/build/debug",
           "cacheVariables": {
             "CMAKE_BUILD_TYPE": "Debug"
-          },
-          "generator": "Unix Makefiles"
+          }
         },
         {
           "name": "release",
@@ -35,8 +34,7 @@
           "binaryDir": "${sourceDir}/build/release",
           "cacheVariables": {
             "CMAKE_BUILD_TYPE": "Release"
-          },
-          "generator": "Unix Makefiles"
+          }
         },
         {
           "name": "vcpkg-default",
