@@ -118,12 +118,14 @@
           "name": "vcpkg-release",
           "description": "Test in Release mode with vcpkg",
           "configurePreset": "vcpkg-release",
+          "configuration": "Release",
           "inherits": "test-default"
         },
         {
           "name": "vcpkg-debug",
           "description": "Test in Debug mode with vcpkg",
           "configurePreset": "vcpkg-debug",
+          "configuration": "Debug",
           "inherits": "test-default"
         }
       ]
