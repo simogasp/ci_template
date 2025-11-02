@@ -3,6 +3,7 @@
   "name": "project-name",
   "description": "project description",
   "license": "MIT",
+  "builtin-baseline": "4334d8b4c8916018600212ab4dd4bbdc343065d1",
   "dependencies": [
     "spdlog",
     "catch2"

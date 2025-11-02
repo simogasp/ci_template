@@ -7,8 +7,13 @@ on:
   schedule:
     - cron: "5 8 * * 1"
 
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
 env:
-  VCPKG_BINARY_SOURCES: 'clear;x-gha,readwrite'
+  VCPKG_BINARY_SOURCES: 'clear;files,${{ github.workspace }}/vcpkg_cache,readwrite'
 
 jobs:
   build:
@@ -46,6 +51,7 @@ jobs:
         path: |
           ${{ github.workspace }}/vcpkg
           ${{ github.workspace }}/vcpkg_installed
+          ${{ github.workspace }}/vcpkg_cache
         key: vcpkg-${{ runner.os }}-${{ hashFiles('**/vcpkg.json', '.github/workflows/build_ci_with_vcpkg.yml') }}
         restore-keys: |
           vcpkg-${{ runner.os }}-
