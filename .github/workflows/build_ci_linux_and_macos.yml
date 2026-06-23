@@ -23,7 +23,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Install Linux dependencies with caching
       uses: awalsh128/cache-apt-pkgs-action@latest
